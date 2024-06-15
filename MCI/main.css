@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+.v7_120 {
+  width: 100%;
+  height: 100vh;
+  background: rgba(13,13,13,1);
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Убираем минимальную ширину */
+@media (min-width: 992px) {
+  .v7_120 {
+    min-width: 992px;
+  }
+}
+
+.v15_44 {
+  width: 100%;
+  height: 100%;
+  background: url("images/v15_44.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.v17_51 {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0,0,0,1), rgba(212,12,12,0.6000000238418579));
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.v13_8 {
+  width: 100%;
+  color: rgba(13,13,13,1); /* Изменено на черный цвет */
+  font-family: Astloch;
+  font-weight: Bold;
+  font-size: 320px;
+  opacity: 1;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+.v15_47 {
+  width: 100%;
+  color: rgba(255,223,142,1);
+  font-family: New Rocker;
+  font-weight: Regular;
+  font-size: 96px;
+  opacity: 1;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  margin-top: 20px;
+}
+.menu {
+  display: flex;
+  gap: 20px;
+  position: absolute;
+  top: 20px; /* Меню теперь сверху экрана */
+  z-index: 2;
+}
+.v15_33, .v15_31, .v15_32 {
+  color: rgba(249,208,103,1);
+  font-family: New Rocker;
+  font-weight: Regular;
+  font-size: 40px;
+  opacity: 1;
+  text-align: center;
+}
+
+/* Медиа-запросы для мобильных устройств */
+@media (max-width: 768px) {
+  .v13_8 {
+    font-size: 170px; /* Увеличен размер текста Sangria */
+  }
+  .v15_47 {
+    font-size: 40px;
+  }
+  .v15_33, .v15_31, .v15_32 {
+    font-size: 20px;
+  }
+  .menu {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+}
+@media (max-width: 480px) {
+  .v13_8 {
+    font-size: 100px; /* Увеличен размер текста Sangria */
+  }
+  .v15_47 {
+    font-size: 30px;
+  }
+  .v15_33, .v15_31, .v15_32 {
+    font-size: 16px;
+  }
+  .menu {
+    top: 10px;
+  }
+}

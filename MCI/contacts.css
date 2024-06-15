@@ -1,0 +1,190 @@
+* {
+  box-sizing: border-box; /* Усі елементи включають границі в свої розміри */
+}
+
+body {
+  font-size: 14px; /* Базовий розмір шрифту для всього тіла документу */
+}
+
+.v7_123 {
+  width: 100%; /* Ширина елемента відповідає ширині вікна */
+  height: 1280px; /* Висота елемента */
+  background: rgba(13, 13, 13, 1); /* Цвет фону з використанням RGBA */
+  opacity: 1; /* Повна прозорість */
+  position: absolute; /* Позиціонування абсолютне відносно вікна */
+  top: 0px; /* Відступ зверху */
+  left: 0px; /* Відступ зліва */
+  overflow: hidden; /* Приховує зайвий контент, який виходить за межі об'єкта */
+  min-width: 992px;
+}
+
+.v15_39 {
+  width: 80%; /* Ширина зображення */
+  height: 100%; /* Висота зображення */
+  background: url("images/v15_39.png"); /* Задній фон - зображення */
+  background-repeat: no-repeat; /* Відмова від повторення фону */
+  background-position: center center; /* Центрування фону по горизонталі і вертикалі */
+  background-size: cover; /* Розмір фону покриває весь контейнер */
+  opacity: 1; /* Повна прозорість */
+  position: absolute; /* Абсолютне позиціонування */
+  top: 36px; /* Відступ зверху */
+  right: 700px; /* Відступ справа */
+  overflow: hidden; /* Приховує зайвий контент, який виходить за межі об'єкта */
+}
+
+.v19_113 {
+  width: 100%; /* Ширина елемента */
+  height: 100%; /* Висота елемента */
+  background: rgba(13, 13, 13, 0.4); /* Півпрозорий фон */
+  opacity: 1; /* Повна прозорість */
+  position: absolute; /* Абсолютне позиціонування */
+  top: 33px; /* Відступ зверху */
+  left: 0; /* Відступ зліва */
+  overflow: hidden; /* Приховує зайвий контент, який виходить за межі об'єкта */
+}
+
+.v19_106 {
+  width: 94px; /* Ширина елемента */
+  color: rgba(148, 10, 10, 1); /* Колір тексту */
+  position: absolute; /* Абсолютне позиціонування */
+  top: 20px; /* Відступ зверху */
+  left: 49px; /* Відступ зліва */
+  font-family: Astloch; /* Шрифт */
+  font-weight: bold; /* Жирний шрифт */
+  font-size: 96px; /* Розмір шрифту */
+  opacity: 1; /* Повна прозорість */
+  text-align: left; /* Вирівнювання тексту */
+}
+
+.menu {
+  display: flex; /* Відображення елементів в рядок */
+  justify-content: center; /* Вирівнювання елементів по центру по горизонталі */
+  gap: 20px; /* Відступ між елементами */
+  position: absolute; /* Абсолютне позиціонування */
+  top: 20px; /* Відступ зверху */
+  left: 0; /* Відступ зліва */
+  right: 0; /* Відступ справа */
+  z-index: 2; /* Порядок накладення над іншими елементами */
+}
+
+.v19_107, .v19_108, .v19_109 {
+  color: rgba(249, 208, 103, 1); /* Колір тексту */
+  font-family: 'New Rocker', cursive; /* Шрифт */
+  font-weight: regular; /* Регулярний шрифт */
+  font-size: 40px; /* Розмір шрифту */
+  opacity: 1; /* Повна прозорість */
+  text-align: center; /* Вирівнювання тексту по центру */
+}
+
+.v19_110 {
+  width: 499px; /* Ширина елемента */
+  color: rgba(148, 10, 10, 1); /* Колір тексту */
+  position: absolute; /* Абсолютне позиціонування */
+  top: 113px; /* Відступ зверху */
+  left: calc(50% - 249.5px); /* Центрирование элемента по горизонтали */
+  font-family: Astloch; /* Шрифт */
+  font-weight: bold; /* Жирний шрифт */
+  font-size: 150px; /* Розмір шрифту */
+  opacity: 1; /* Повна прозорість */
+  text-align: center; /* Вирівнювання тексту */
+}
+
+.v19_111 {
+  width: 90%; /* Ширина елемента */
+  color: rgba(249, 208, 103, 1); /* Колір тексту */
+  position: absolute; /* Абсолютне позиціонування */
+  top: 750px; /* Відступ зверху */
+  left: 5%; /* Відступ зліва */
+  font-family: 'New Rocker', cursive; /* Шрифт */
+  font-weight: regular; /* Регулярний шрифт */
+  font-size: 48px; /* Розмір шрифту */
+  opacity: 1; /* Повна прозорість */
+  text-align: center; /* Вирівнювання тексту */
+}
+
+.v19_112 {
+  width: 100%; /* Ширина елемента */
+  color: rgba(148, 10, 10, 1); /* Колір тексту */
+  position: absolute; /* Абсолютне позиціонування */
+  top: 459px; /* Відступ зверху */
+  left: 0; /* Відступ зліва */
+  font-family: Astloch; /* Шрифт */
+  font-weight: bold; /* Жирний шрифт */
+  font-size: 240px; /* Розмір шрифту */
+  opacity: 1; /* Повна прозорість */
+  text-align: center; /* Вирівнювання тексту */
+}
+
+
+@media (max-width: 768px) {
+  .v7_123 {
+    min-width: 100%; 
+  }
+  .v15_39 {
+    width: 100%;
+    right: 0;
+    top: 0;
+  }
+  .v19_110 {
+    font-size: 120px;
+    width: 90%;
+    left: 5%;
+  }
+  .v19_111 {
+    font-size: 36px;
+    width: 90%;
+    left: 5%;
+  }
+  .v19_112 {
+    font-size: 180px;
+    width: 100%;
+    top: 350px;
+  }
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    top: 70px;
+  }
+}
+
+@media (max-width: 480px) {
+  .v7_123 {
+    min-width: 100%; 
+  }
+  .v19_106{
+    font-size: 48px;
+    left: 10px;
+  }
+  .v15_39 {
+    width: 100%;
+    right: 0;
+    top: 0;
+  }
+  .v19_110 {
+    font-size: 80px;
+    width: 90%;
+    left: 5%;
+    color: rgba(249, 208, 103, 1);
+  }
+  .v19_111 {
+    font-size: 24px;
+    width: 90%;
+    left: 5%;
+  }
+  .v19_112 {
+    font-size: 120px;
+    width: 100%;
+    top: 250px;
+    color: rgba(249, 208, 103, 1);
+  }
+  .menu {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    top: 60px;
+  }
+  .v19_107, .v19_108, .v19_109 {
+    font-size: 16px;
+  }
+}
